@@ -19,7 +19,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Segmentation
   - Input: RGB Image
   - Publication: ICRA 2020
-  - Feature: A multi-stage handshake communication mechanism where the neural network can learn to compress relevant information needed for each stage.
+  - Feature: A multi-stage handshake communication mechanism where the neural network can learn to compress relevant information needed for each stage; _Using matching score to determine who to connect with_.
     
 
 ## Model Enhancement
