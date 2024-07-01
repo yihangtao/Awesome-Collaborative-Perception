@@ -6,6 +6,7 @@ Generally, the works are classified into the following types:
 - Model Enhancement
 - Robustness
 - Security
+- Dataset
 - Others
 
 ## Communication Reduction
@@ -83,5 +84,25 @@ By studying adversarial robustness, we can enhance modern security protocols by 
   - Input: Point Cloud
   - Publication: ICCV 2021
   - Feature: Investigate adversarial attacks in multi-agent perception where perturbations are applied to learned intermediate representations.
+
+## Dataset
+
+Several simulated/real-world and V2V/V2X collaborative perception datasets have been created recently.
+
+- **AttFuse** (OPV2V: An Open Benchmark Dataset and Fusion Pipeline for Perception with Vehicle-to-Vehicle Communication) [[paper](https://arxiv.org/abs/2109.07644)] [[code](https://github.com/DerrickXuNu/OpenCOOD)]
+  - Mode: Intermediate Collaboration
+  - Dataset: **OPV2V**
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ICRA 2022
+
+- **When2com** (When2com: Multi-Agent Perception via Communication Graph Grouping) [[paper](https://arxiv.org/abs/2006.00176)] [[code](https://github.com/GT-RIPL/MultiAgentPerception)]
+  - Mode: Intermediate Collaboration
+  - Dataset: **AirSim-MAP**
+  - Task: Segmentation, Classification
+  - Input: RGB Image
+  - Publication: CVPR 2020
+
+
 
 ## Others
