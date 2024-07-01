@@ -89,6 +89,14 @@ Currently, several works have focused on improving collaborative perception perf
 
 Due to the common localization noise in the real world, the collaborative perception performance would degrade below single-agent performance. It is paramount to study the robustness against pose noise in vehicle-to-everything communication systems and to design models that can explicitly reason under such noise. Here are the relevant papers listed in chronological order.
 
+- **Double-M Quantification** (Uncertainty Quantification of Collaborative Detection for Self-Driving) [[paper](https://arxiv.org/abs/2209.08162)] [[code](https://github.com/coperception/double-m-quantification)]
+  - Mode: Early Collaboration, Intermediate Collaboration
+  - Dataset: V2X-Sim
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ICRA 2023
+  - Feature: The proposed Double-M Quantification is the first attempt to estimate the uncertainty (both the epistemic uncertainty and aleatoric uncertainty)  of collaborative object detection.
+
 - **SyncNet** (Latency-Aware Collaborative Perception) [[paper](https://arxiv.org/abs/2207.08560)] [[code](https://github.com/MediaBrain-SJTU/SyncNet)]
   - Mode: Intermediate Collaboration
   - Dataset: V2X-Sim
@@ -131,6 +139,22 @@ By studying adversarial robustness, we can enhance modern security protocols by 
 
 Multi-agents could have different types of sensors (Lidar/Camera) and communication links (V2V/V2X). Meanwhile, the downstream tasks could also be different for different agents, which could cause heterogeneity and hetero-modal. To facilitate large-scale deployment of collaborative perception, how to handle the heterogeneity in multi-agent perception systems is a major concern. Following are recent works focusing on heterogeneity in collaborative perception systems.
 
+- **MAMP** (Model-Agnostic Multi-Agent Perception Framework) [[paper](https://arxiv.org/abs/2203.13168)] [[code](https://github.com/DerrickXuNu/model_anostic)]
+  - Mode: Late Collaboration
+  - Dataset: OPV2V
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ICRA 2023
+  - Feature:  A model-agnostic multi-agent perception framework to reduce the negative effect caused by the model discrepancies without sharing the model information.
+
+- **MPDA** (Bridging the Domain Gap for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2210.08451)] [[code](https://github.com/DerrickXuNu/MPDA)]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2XSet
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ICRA 2023
+  - Feature: The first work to bridge the domain gap for multi-agent perception (Assume different agents have different neural networks).
+
 - **V2X-ViT** (V2X-ViT: Vehicle-to-Everything Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2203.10638)] [[code](https://github.com/DerrickXuNu/v2x-vit)]
   - Mode: Intermediate Collaboration
   - Dataset: V2XSet
@@ -153,7 +177,7 @@ Several simulated/real-world and V2V/V2X collaborative perception datasets have 
 
 - **TCLF** (DAIR-V2X: A Large-Scale Dataset for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper](https://arxiv.org/abs/2204.05575)] [[code](https://github.com/AIR-THU/DAIR-V2X)]
   - Mode: Late Collaboration
-  - Dataset: DAIR-V2X
+  - Dataset: **DAIR-V2X**
   - Task: Detection
   - Input: RGB Image, Point Cloud
   - Publication: CVPR 2022
