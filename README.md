@@ -95,6 +95,7 @@ Several simulated/real-world and V2V/V2X collaborative perception datasets have 
   - Task: Detection
   - Input: Point Cloud
   - Publication: ICRA 2022
+  - Type: Simulated, V2V
 
 - **When2com** (When2com: Multi-Agent Perception via Communication Graph Grouping) [[paper](https://arxiv.org/abs/2006.00176)] [[code](https://github.com/GT-RIPL/MultiAgentPerception)]
   - Mode: Intermediate Collaboration
@@ -102,6 +103,7 @@ Several simulated/real-world and V2V/V2X collaborative perception datasets have 
   - Task: Segmentation, Classification
   - Input: RGB Image
   - Publication: CVPR 2020
+  - Type: Simulated, Drones
 
 
 
