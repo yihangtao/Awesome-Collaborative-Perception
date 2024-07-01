@@ -6,6 +6,7 @@ Generally, the works are classified into the following types:
 - Model Enhancement
 - Robustness
 - Security
+- Heterogeneity
 - Dataset
 - Others
 
@@ -72,6 +73,14 @@ Currently, several works have focused on improving collaborative perception perf
 
 Due to the common localization noise in the real world, the collaborative perception performance would degrade below single-agent performance. It is paramount to study the robustness against pose noise in vehicle-to-everything communication systems and to design models that can explicitly reason under such noise. Here are the relevant papers listed in chronological order.
 
+- **IA-RCP** (Robust Collaborative Perception against Communication Interruption) [[paper](https://learn-to-race.org/workshop-ai4ad-ijcai2022/papers.html)] [~~code~~]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2X-Sim
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: IJCAI 2022
+  - Feature: The first work to address the interruption issue in collaborative perception.
+
 - **Robust V2V** (Learning to Communicate and Correct Pose Errors) [[paper](https://arxiv.org/abs/2011.05289)] [[code](https://github.com/yifanlu0227/CoAlign)]
   - Mode: Intermediate Collaboration
   - Dataset: V2V-Sim (not publicly available)
@@ -92,6 +101,18 @@ By studying adversarial robustness, we can enhance modern security protocols by 
   - Input: Point Cloud
   - Publication: ICCV 2021
   - Feature: Investigate adversarial attacks in multi-agent perception where perturbations are applied to learned intermediate representations.
+ 
+## Heterogeneity
+
+Multi-agents could have different types of sensors (Lidar/Camera) and communication links (V2V/V2X). Meanwhile, the downstream tasks could also be different for different agents, which could cause heterogeneity and hetero-modal. To facilitate large-scale deployment of collaborative perception, how to handle the heterogeneity in multi-agent perception systems is a major concern. Following are recent works focusing on heterogeneity in collaborative perception systems.
+
+- **STAR** (Multi-Robot Scene Completion: Towards Task-Agnostic Collaborative Perception) [[paper&review](https://openreview.net/forum?id=hW0tcXOJas2)] [[code](https://github.com/coperception/star)]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2X-Sim
+  - Task: Segmentation, Detection
+  - Input: Point Cloud
+  - Publication: CoRL 2022
+  - Feature: 
 
 ## Dataset
 
