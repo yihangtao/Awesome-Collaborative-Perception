@@ -13,6 +13,14 @@ Generally, the works are classified into the following types:
 Reducing the communication burden to save bandwidth resources and mitigate the perception delay is one of the most significant subtopics of collaborative perception.
 Recently, many papers have focused on optimizing communication loads of collaborative perception, which are listed in chronological order.
 
+- **Who2com** (Who2com: Collaborative Perception via Learnable Handshake Communication) [[paper](https://arxiv.org/abs/2003.09575)] [[code](https://github.com/GT-RIPL/MultiAgentPerception)]
+  - Key Feature: A multi-stage handshake communication mechanism where the neural network can learn to compress relevant information needed for each stage. Specifically, a target agent with degraded sensor data sends a compressed request, the other agents respond with matching scores, and the target agent determines who to connect with.
+  - Publication: ICRA 2020
+  - Mode: Intermediate Collaboration
+  - Dataset: AirSim-CP (has an asynchronous issue between views)
+  - Task: Segmentation
+  - Input: RGB Image
+
 ## Model Enhancement
 
 ## Robustness
