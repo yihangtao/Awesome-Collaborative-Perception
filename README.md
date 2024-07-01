@@ -21,7 +21,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Detection
   - Input: Point Cloud
   - Publication: NeurIPS 2022
-  - Feature: A novel communication-efficient multi-agent collaborative perception framework with the guidance of spatial confidence maps.
+  - Feature: A novel **communication-efficient** multi-agent collaborative perception framework with the guidance of **spatial confidence maps**.
 
 - **CRCNet** (Complementarity-Enhanced and Redundancy-Minimized Collaboration Network for Multi-agent Perception) [[paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548197)] [~~code~~]
   - Mode: Intermediate Collaboration
@@ -29,7 +29,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Detection
   - Input: Point Cloud
   - Publication: MM 2022
-  - Feature: Highlight two criteria for selecting features to save communication bandwidth including complementarity maximization and redundancy minimization.
+  - Feature: Highlight two criteria for selecting features to **save communication bandwidth** including complementarity maximization and redundancy minimization.
 
 - **DiscoNet** (Learning Distilled Collaboration Graph for Multi-Agent Perception) [[paper&review](https://openreview.net/forum?id=ZRcjSOmYraB)] [[code](https://github.com/ai4ce/DiscoNet)]
   - Mode: Early Collaboration (teacher model), Intermediate Collaboration (student model)
@@ -37,7 +37,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Detection
   - Input: Point Cloud
   - Publication: NeurIPS 2021
-  - Feature: A teacher-student framework to train DiscoGraph via knowledge distillation; A matrix-valued edge weight in DiscoGraph.
+  - Feature: A teacher-student framework to train DiscoGraph via **knowledge distillation**; A matrix-valued edge weight in DiscoGraph.
 
 - **MASH** (Overcoming Obstructions via Bandwidth-Limited Multi-Agent Spatial Handshaking) [[paper](https://arxiv.org/abs/2107.00771)] [[code](https://github.com/yifanlu0227/CoAlign)]
   - Mode: Late Collaboration
