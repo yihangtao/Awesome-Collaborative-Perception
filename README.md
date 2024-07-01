@@ -15,6 +15,15 @@ Generally, the works are classified into the following types:
 Reducing the communication burden to save bandwidth resources and mitigate the perception delay is one of the most significant subtopics of collaborative perception.
 Recently, many papers have focused on optimizing communication loads of collaborative perception, which are listed in chronological order.
 
+- **CodeFilling** (Communication-Efficient Collaborative Perception via Information Filling with Codebook) [[paper](https://arxiv.org/abs/2405.04966)] [[code](https://github.com/PhyllisH/CodeFilling)]
+  - Mode: Intermediate Collaboration
+  - Dataset: DAIR-V2X, OPV2VH+
+  - Task: Detection
+  - Input: RGB Image, Point Cloud
+  - Publication: CVPR 2024
+  - Feature: The proposed codebook-based message representation enables the transmission of integer codes, rather than high-dimensional feature maps; The proposed information-filling-driven message selection optimizes local messages to
+collectively fill each agent’s information demand, preventing information overflow among multiple agents.
+
 - **CMiMC** (What Makes Good Collaborative Views? Contrastive Mutual Information Maximization for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2403.10068)] [[code](https://github.com/77SWF/CMiMC)]
   - Mode: Intermediate Collaboration
   - Dataset: V2X-Sim
@@ -145,6 +154,14 @@ Currently, several works have focused on improving collaborative perception perf
 ## Robustness
 
 Due to the common localization noise in the real world, the collaborative perception performance would degrade below single-agent performance. It is paramount to study the robustness against pose noise in vehicle-to-everything communication systems and to design models that can explicitly reason under such noise. Here are the relevant papers listed in chronological order.
+
+- **MRCNet** Multi-Agent Collaborative Perception via Motion-Aware Robust Communication Network [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Hong_Multi-agent_Collaborative_Perception_via_Motion-aware_Robust_Communication_Network_CVPR_2024_paper.html)] [[code](https://github.com/IndigoChildren/collaborative-perception-MRCNet)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, V2XSet, V2X-Sim
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: CVPR 2024
+  - Feature: MRCNet consists of two main components: multi-scale robust fusion (MRF) addresses pose noise by developing cross-semantic multi-scale enhanced aggregation to fuse features of different scales, while motion enhanced mechanism (MEM) captures motion context to compensate for information blurring caused by moving objects.
 
 - **CoBEVFlow** (Robust Asynchronous Collaborative 3D Detection via Bird's Eye View Flow) [[paper&review](https://openreview.net/forum?id=UHIDdtxmVS)] [[code](https://github.com/MediaBrain-SJTU/CoBEVFlow)]
   - Mode: Intermediate Collaboration
@@ -296,12 +313,20 @@ Multi-agents could have different types of sensors (Lidar/Camera) and communicat
 
 Several simulated/real-world and V2V/V2X collaborative perception datasets have been created recently.
 
+- **CoopDet3D** (TUMTraf V2X Cooperative Perception Dataset) [[paper](https://arxiv.org/abs/2403.01316)] [[code](https://github.com/tum-traffic-dataset/coopdet3d)]
+  - Mode: Intermediate Collaboration
+  - Dataset: **TUMTraf-V2X**
+  - Task: Detection
+  - Input: RGB Image, Point Cloud
+  - Publication: CVPR 2024
+  - Type: Real-world, V2X, Traffic violations 
+
 - **V2XFormer** (DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving) [[paper](https://arxiv.org/abs/2304.01168)] [[code](https://github.com/tianqi-wang1996/DeepAccident)]
   - Mode: Intermediate Collaboration
   - Dataset: **DeepAccident**
   - Task: Detection, Forecasting
   - Input: RGB Image
-  - Type: Simulated, V2X, Accident Scenarios
+  - Type: Simulated, V2X, Accident scenarios
 
 - **FF-Tracking** (V2X-Seq: The Large-Scale Sequential Dataset for the Vehicle-Infrastructure Cooperative Perception and Forecasting) [[paper](https://arxiv.org/abs/2305.05938)] [[code](https://github.com/AIR-THU/DAIR-V2X-Seq)]
   - Mode: Intermediate Collaboration
