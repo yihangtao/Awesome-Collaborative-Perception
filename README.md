@@ -73,6 +73,15 @@ Currently, several works have focused on improving collaborative perception perf
 
 Due to the common localization noise in the real world, the collaborative perception performance would degrade below single-agent performance. It is paramount to study the robustness against pose noise in vehicle-to-everything communication systems and to design models that can explicitly reason under such noise. Here are the relevant papers listed in chronological order.
 
+- **SyncNet** (Latency-Aware Collaborative Perception) [[paper](https://arxiv.org/abs/2207.08560)] [[code](https://github.com/MediaBrain-SJTU/SyncNet)]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2X-Sim
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ECCV 2022
+  - Feature: Formulate the communication latency challenge in collaborative perception for the first time and propose a novel latency-aware collaborative perception system; A novel latency compensation module, termed _SyncNet_, to
+achieve feature-level synchronization.
+
 - **IA-RCP** (Robust Collaborative Perception against Communication Interruption) [[paper](https://learn-to-race.org/workshop-ai4ad-ijcai2022/papers.html)] [~~code~~]
   - Mode: Intermediate Collaboration
   - Dataset: V2X-Sim
@@ -106,13 +115,21 @@ By studying adversarial robustness, we can enhance modern security protocols by 
 
 Multi-agents could have different types of sensors (Lidar/Camera) and communication links (V2V/V2X). Meanwhile, the downstream tasks could also be different for different agents, which could cause heterogeneity and hetero-modal. To facilitate large-scale deployment of collaborative perception, how to handle the heterogeneity in multi-agent perception systems is a major concern. Following are recent works focusing on heterogeneity in collaborative perception systems.
 
+- **V2X-ViT** (V2X-ViT: Vehicle-to-Everything Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2203.10638)] [[code](https://github.com/DerrickXuNu/v2x-vit)]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2XSet
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ECCV 2022
+  - Feature:  The first unified transformer architecture for V2X perception, which can capture the heterogeneity nature of V2X systems with strong robustness against various noises.
+
 - **STAR** (Multi-Robot Scene Completion: Towards Task-Agnostic Collaborative Perception) [[paper&review](https://openreview.net/forum?id=hW0tcXOJas2)] [[code](https://github.com/coperception/star)]
   - Mode: Intermediate Collaboration
   - Dataset: V2X-Sim
   - Task: Segmentation, Detection
   - Input: Point Cloud
   - Publication: CoRL 2022
-  - Feature: 
+  - Feature: The first task-agnostic collaborative perception paradigm that learns a single collaboration module in a self-supervised manner for different downstream tasks.
 
 ## Dataset
 
