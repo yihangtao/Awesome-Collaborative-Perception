@@ -3,7 +3,7 @@
 This repository collects recent advances in **collaborative / cooperative / multi-agent perception** for **V2I / V2V / V2X** autonomous driving. 
 Generally, the works are classified into the following types:
 - Communication Reduction
-- Model Enhancement
+- Model/Pipeline Optimization
 - Robustness
 - Security
 - Heterogeneity
@@ -14,6 +14,14 @@ Generally, the works are classified into the following types:
 
 Reducing the communication burden to save bandwidth resources and mitigate the perception delay is one of the most significant subtopics of collaborative perception.
 Recently, many papers have focused on optimizing communication loads of collaborative perception, which are listed in chronological order.
+
+- **Where2comm** (Where2comm: Efficient Collaborative Perception via Spatial Confidence Maps) [[paper&review](https://openreview.net/forum?id=dLL4KXzKUpS)] [[code](https://github.com/MediaBrain-SJTU/where2comm)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, DAIR-V2X, V2X-Sim, CoPerception-UAV
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: NeurIPS 2022
+  - Feature: A novel communication-efficient multi-agent collaborative perception framework with the guidance of spatial confidence maps.
 
 - **CRCNet** (Complementarity-Enhanced and Redundancy-Minimized Collaboration Network for Multi-agent Perception) [[paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548197)] [~~code~~]
   - Mode: Intermediate Collaboration
@@ -57,9 +65,17 @@ Recently, many papers have focused on optimizing communication loads of collabor
 
     
 
-## Model Enhancement
+## Model/Pipeline Optimization
 
-Currently, several works have focused on improving collaborative perception performance by leveraging advanced models or refining the existing model structures. Here are some examples.
+Currently, several works have focused on improving collaborative perception performance by leveraging advanced models or refining existing pipelines. Here are some examples.
+
+- **Coopernaut** (COOPERNAUT: End-to-End Driving with Cooperative Perception for Networked Vehicles) [[paper](https://arxiv.org/abs/2205.02222)] [[code](https://github.com/UT-Austin-RPL/Coopernaut)]
+  - Mode: Intermediate Collaboration
+  - Dataset: AutoCastSim (simulator)
+  - Task: Planning
+  - Input: Point Cloud
+  - Publication: CVPR 2022
+  - Feature: An end-to-end driving model with cooperative perception via V2V channels; A network-augmented autonomous driving simulation framework _AUTOCASTSIM_.
 
 - **MP-Pose** (Multi-Robot Collaborative Perception with Graph Neural Networks) [[paper](https://arxiv.org/abs/2201.01760)] [~~code~~]
   - Mode: Intermediate Collaboration
@@ -134,6 +150,14 @@ Multi-agents could have different types of sensors (Lidar/Camera) and communicat
 ## Dataset
 
 Several simulated/real-world and V2V/V2X collaborative perception datasets have been created recently.
+
+- **TCLF** (DAIR-V2X: A Large-Scale Dataset for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper](https://arxiv.org/abs/2204.05575)] [[code](https://github.com/AIR-THU/DAIR-V2X)]
+  - Mode: Late Collaboration
+  - Dataset: DAIR-V2X
+  - Task: Detection
+  - Input: RGB Image, Point Cloud
+  - Publication: CVPR 2022
+  - Type: Real-world, V2X
 
 - **AttFuse** (OPV2V: An Open Benchmark Dataset and Fusion Pipeline for Perception with Vehicle-to-Vehicle Communication) [[paper](https://arxiv.org/abs/2109.07644)] [[code](https://github.com/DerrickXuNu/OpenCOOD)]
   - Mode: Intermediate Collaboration
