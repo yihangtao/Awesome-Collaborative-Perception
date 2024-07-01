@@ -20,6 +20,14 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Input: RGB Image
   - Publication: ICRA 2020
   - Feature: A multi-stage handshake communication mechanism where the neural network can learn to compress relevant information needed for each stage; Using matching score to determine _who to connect with_.
+
+- **When2com** (When2com: Multi-Agent Perception via Communication Graph Grouping) [[paper](https://arxiv.org/abs/2006.00176)] [[code](https://github.com/GT-RIPL/MultiAgentPerception)]
+  - Mode: Intermediate Collaboration
+  - Dataset: AirSim-MAP
+  - Task: Segmentation, Classification
+  - Input: RGB Image
+  - Publication: CVPR 2020
+  - Feature: A unified framework that learns both how to construct communication groups and when to communicate; A collaborative multi-agent semantic segmentation dataset, AirSim-MAP.
     
 
 ## Model Enhancement
