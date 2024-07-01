@@ -26,6 +26,16 @@ Recently, many papers have focused on optimizing communication loads of collabor
 
 ## Robustness
 
+Due to the common localization noise in the real world, the collaborative perception performance would degrade below single-agent performance. It is paramount to study the robustness against pose noise in vehicle-to-everything communication systems and to design models that can explicitly reason under such noise. Here are the relevant papers listed in chronological order.
+
+- **Robust V2V** (Learning to Communicate and Correct Pose Errors) [[paper](https://arxiv.org/abs/2011.05289)] [[code](https://github.com/yifanlu0227/CoAlign)]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2V-Sim (not publicly available)
+  - Task: Detection, Forecasting
+  - Input: Point Cloud
+  - Publication: CoRL 2020
+  - Feature: A _pose regression_ module predicts the relative pose noise between a pair of vehicles; A _consistency module_ based on Markov random field with Bayesian reweighting; An _attention module_ to filter out remaining noisy messages before aggregation. 
+
 ## Security
 
 ## Others
