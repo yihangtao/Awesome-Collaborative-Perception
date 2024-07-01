@@ -15,6 +15,14 @@ Generally, the works are classified into the following types:
 Reducing the communication burden to save bandwidth resources and mitigate the perception delay is one of the most significant subtopics of collaborative perception.
 Recently, many papers have focused on optimizing communication loads of collaborative perception, which are listed in chronological order.
 
+- **What2comm** (What2comm: Towards Communication-Efficient Collaborative Perception via Feature Decoupling) [[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611699)] [~~code~~]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, V2XSet, DAIR-V2X
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: MM 2023
+  - Feature: A novel decoupling-based communication mechanism to promote comprehensive and pragmatic information transmission among heterogeneous agents.
+
 - **Where2comm** (Where2comm: Efficient Collaborative Perception via Spatial Confidence Maps) [[paper&review](https://openreview.net/forum?id=dLL4KXzKUpS)] [[code](https://github.com/MediaBrain-SJTU/where2comm)]
   - Mode: Intermediate Collaboration
   - Dataset: OPV2V, DAIR-V2X, V2X-Sim, CoPerception-UAV
@@ -69,6 +77,14 @@ Recently, many papers have focused on optimizing communication loads of collabor
 
 Currently, several works have focused on improving collaborative perception performance by leveraging advanced models or refining existing pipelines. Here are some examples.
 
+- **AdaFusion** (Adaptive Feature Fusion for Cooperative Perception Using LiDAR Point Clouds) [[paper](https://arxiv.org/abs/2208.00116)] [[code](https://github.com/DonghaoQiao/Adaptive-Feature-Fusion-for-Cooperative-Perception)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, CODD
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: WACV 2023
+  - Feature: Adaptive feature fusion models with trainable feature selection modules to enhance perception accuracy.
+
 - **Coopernaut** (COOPERNAUT: End-to-End Driving with Cooperative Perception for Networked Vehicles) [[paper](https://arxiv.org/abs/2205.02222)] [[code](https://github.com/UT-Austin-RPL/Coopernaut)]
   - Mode: Intermediate Collaboration
   - Dataset: AutoCastSim (simulator)
@@ -88,6 +104,22 @@ Currently, several works have focused on improving collaborative perception perf
 ## Robustness
 
 Due to the common localization noise in the real world, the collaborative perception performance would degrade below single-agent performance. It is paramount to study the robustness against pose noise in vehicle-to-everything communication systems and to design models that can explicitly reason under such noise. Here are the relevant papers listed in chronological order.
+
+- **FeaCo** (FeaCo: Reaching Robust Feature-Level Consensus in Noisy Pose Conditions) [[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611880)] [[code](https://github.com/jmgu0212/FeaCo)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, V2V4Real
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: MM 2023
+  - Feature: Robust Feature-level Consensus among collaborating agents in noisy pose conditions without additional training. 
+
+- **CoAlign** (Robust Collaborative 3D Object Detection in Presence of Pose Errors) [[paper](https://arxiv.org/abs/2211.07214)] [[code](https://github.com/yifanlu0227/CoAlign)]
+  - Mode: Intermediate Collaboration, Late Collaboration
+  - Dataset: OPV2V, V2X-Sim, DAIR-V2X
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ICRA 2023
+  - Feature: A novel agent-object pose graph modeling to enhance pose consistency among collaborating agents.
 
 - **Double-M Quantification** (Uncertainty Quantification of Collaborative Detection for Self-Driving) [[paper](https://arxiv.org/abs/2209.08162)] [[code](https://github.com/coperception/double-m-quantification)]
   - Mode: Early Collaboration, Intermediate Collaboration
@@ -202,3 +234,13 @@ Several simulated/real-world and V2V/V2X collaborative perception datasets have 
 
 
 ## Others
+
+Below are other interesting directions in collaborative perception.
+
+- **DUSA** (DUSA: Decoupled Unsupervised Sim2Real Adaptation for Vehicle-to-Everything Collaborative Perception) [[paper](https://arxiv.org/abs/2310.08117)] [[code](https://github.com/refkxh/DUSA)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, V2XSet, DAIR-V2X
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: MM 2023
+  - Feature:  New unsupervised sim2real domain adaptation method for V2X collaborative detection.
