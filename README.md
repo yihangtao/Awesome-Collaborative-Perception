@@ -15,6 +15,39 @@ Generally, the works are classified into the following types:
 Reducing the communication burden to save bandwidth resources and mitigate the perception delay is one of the most significant subtopics of collaborative perception.
 Recently, many papers have focused on optimizing communication loads of collaborative perception, which are listed in chronological order.
 
+- **FFNet** (Flow-Based Feature Fusion for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper&review](https://openreview.net/forum?id=gsglrhvQxX)] [[code](https://github.com/haibao-yu/FFNet-VIC3D)]
+  - Mode: Intermediate Collaboration
+  - Dataset: DAIR-V2X
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: NeurIPS 2023
+  - Feature: A flow-based feature fusion framework for VIC3D object detection. FFNet transmits feature flow to generate aligned features for data fusion.
+
+- **How2comm** (How2comm: Communication-Efficient and Collaboration-Pragmatic Multi-Agent Perception) [[paper&review](https://openreview.net/forum?id=Dbaxm9ujq6)] [[code](https://github.com/ydk122024/How2comm)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, V2XSet, DAIR-V2X
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: NeurIPS 2023
+  - Feature: A mutual information-aware communication mechanism to maximally sustain the informative features shared by collaborators; A flow-guided delay compensation strategy to predict future characteristics
+from collaborators and eliminate feature misalignment due to temporal asynchrony; A pragmatic collaboration transformer is introduced to integrate holistic spatial semantics and temporal context clues among agents.
+
+- **TransIFF** (TransIFF: An Instance-Level Feature Fusion Framework for Vehicle-Infrastructure Cooperative 3D Detection with Transformers) [[paper](https://openaccess.thecvf.com/content/ICCV2023/html/Chen_TransIFF_An_Instance-Level_Feature_Fusion_Framework_for_Vehicle-Infrastructure_Cooperative_3D_ICCV_2023_paper.html)] [~~code~~]
+  - Mode: Intermediate Collaboration
+  - Dataset: DAIR-V2X
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ICCV 2023
+  - Feature: An instance-level feature fusion framework with transformers that can effectively reduce bandwidth usage; Align the domain gaps between vehicle and infrastructure features, and improve the robustness of feature fusion, leading to a high cooperative perception accuracy.
+
+- **UMC** (UMC: A Unified Bandwidth-Efficient and Multi-Resolution Based Collaborative Perception Framework) [[paper](https://arxiv.org/abs/2303.12400)] [[code](https://github.com/ispc-lab/UMC)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, V2X-Sim
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ICCV 2023
+  - Feature: A novel trainable multi-resolution and selective-region (MRSR) mechanism, achieving higher quality and lower bandwidth for collaborative communication.
+
 - **What2comm** (What2comm: Towards Communication-Efficient Collaborative Perception via Feature Decoupling) [[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611699)] [~~code~~]
   - Mode: Intermediate Collaboration
   - Dataset: OPV2V, V2XSet, DAIR-V2X
@@ -105,6 +138,14 @@ Currently, several works have focused on improving collaborative perception perf
 
 Due to the common localization noise in the real world, the collaborative perception performance would degrade below single-agent performance. It is paramount to study the robustness against pose noise in vehicle-to-everything communication systems and to design models that can explicitly reason under such noise. Here are the relevant papers listed in chronological order.
 
+- **CoBEVFlow** (Robust Asynchronous Collaborative 3D Detection via Bird's Eye View Flow) [[paper&review](https://openreview.net/forum?id=UHIDdtxmVS)] [[code](https://github.com/MediaBrain-SJTU/CoBEVFlow)]
+  - Mode: Intermediate Collaboration
+  - Dataset: DAIR-V2X, IRV2V
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: NeurIPS 2023
+  - Feature: Compensate motions to align asynchronous collaboration messages sent by multiple agents.
+
 - **FeaCo** (FeaCo: Reaching Robust Feature-Level Consensus in Noisy Pose Conditions) [[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611880)] [[code](https://github.com/jmgu0212/FeaCo)]
   - Mode: Intermediate Collaboration
   - Dataset: OPV2V, V2V4Real
@@ -159,6 +200,14 @@ achieve feature-level synchronization.
 In collaborative perception systems, shared information can be modified to execute adversarial attacks on deep learning models that are widely employed in modern systems.
 By studying adversarial robustness, we can enhance modern security protocols by introducing an additional layer of fault tolerance at the neural network level. Below are the papers regarding the security and privacy issues in collaborative perception systems.
 
+- **ROBOSAC** (Among Us: Adversarially Robust Collaborative Perception by Consensus) [[paper](https://arxiv.org/abs/2303.09495)] [[code](https://github.com/coperception/ROBOSAC)]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2X-Sim
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: ICCV 2023
+  - Feature: Develop ROBOSAC, a scalable, generalizable, and generally-applicable adversarially robust collaborative perception framework via multi-robot consensus.
+
 - **Adversarial V2V** (Adversarial Attacks On Multi-Agent Communication) [[paper](https://arxiv.org/abs/2101.06560)] [~~code~~]
   - Mode: Intermediate Collaboration
   - Dataset: V2V-Sim (not publicly available)
@@ -170,6 +219,22 @@ By studying adversarial robustness, we can enhance modern security protocols by 
 ## Heterogeneity
 
 Multi-agents could have different types of sensors (Lidar/Camera) and communication links (V2V/V2X). Meanwhile, the downstream tasks could also be different for different agents, which could cause heterogeneity and hetero-modal. To facilitate large-scale deployment of collaborative perception, how to handle the heterogeneity in multi-agent perception systems is a major concern. Following are recent works focusing on heterogeneity in collaborative perception systems.
+
+- **HM-ViT** (HM-ViT: Hetero-Modal Vehicle-to-Vehicle Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2304.10628)] [[code](https://github.com/XHwind/HM-ViT)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V
+  - Task: Detection
+  - Input: RGB Image, Point Cloud
+  - Publication: ICCV 2023
+  - Feature: A novel transformer framework (HM-ViT) for multi-agent hetero-modal cooperative perception, capable of capturing the modality-specific characteristics and heterogeneous 3D interactions.
+
+- **BM2CP** {BM2CP: Efficient Collaborative Perception with LiDAR-Camera Modalities} [[paper&review](https://openreview.net/forum?id=uJqxFjF1xWp)] [[code](https://github.com/byzhaoAI/BM2CP)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, DAIR-V2X
+  - Task: Detection
+  - Input: RGB Image, Point Cloud
+  - Publication: CoRL 2023
+  - Feature: A novel framework for multi-modal collaborative perception, where modal fusion is guided by LiDAR and collaborative fusion is guided by modality.
 
 - **MAMP** (Model-Agnostic Multi-Agent Perception Framework) [[paper](https://arxiv.org/abs/2203.13168)] [[code](https://github.com/DerrickXuNu/model_anostic)]
   - Mode: Late Collaboration
