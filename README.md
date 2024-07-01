@@ -15,6 +15,14 @@ Generally, the works are classified into the following types:
 Reducing the communication burden to save bandwidth resources and mitigate the perception delay is one of the most significant subtopics of collaborative perception.
 Recently, many papers have focused on optimizing communication loads of collaborative perception, which are listed in chronological order.
 
+- **CMiMC** (What Makes Good Collaborative Views? Contrastive Mutual Information Maximization for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2403.10068)] [[code](https://github.com/77SWF/CMiMC)]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2X-Sim
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: AAAI 2024
+  - Feature: Preserve discriminative information of individual views in the collaborative view by maximizing mutual information between pre- and post-collaboration features while enhancing the efficacy of collaborative views by minimizing the loss function of downstream tasks.
+
 - **FFNet** (Flow-Based Feature Fusion for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper&review](https://openreview.net/forum?id=gsglrhvQxX)] [[code](https://github.com/haibao-yu/FFNet-VIC3D)]
   - Mode: Intermediate Collaboration
   - Dataset: DAIR-V2X
@@ -220,6 +228,22 @@ By studying adversarial robustness, we can enhance modern security protocols by 
 
 Multi-agents could have different types of sensors (Lidar/Camera) and communication links (V2V/V2X). Meanwhile, the downstream tasks could also be different for different agents, which could cause heterogeneity and hetero-modal. To facilitate large-scale deployment of collaborative perception, how to handle the heterogeneity in multi-agent perception systems is a major concern. Following are recent works focusing on heterogeneity in collaborative perception systems.
 
+- **HEAL** (An Extensible Framework for Open Heterogeneous Collaborative Perception) [[paper&review](https://openreview.net/forum?id=KkrDUGIASk)] [[code](https://github.com/yifanlu0227/HEAL)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V-H, DAIR-V2X
+  - Task: Detection
+  - Input: RGB Image, Point Cloud
+  - Publication: ICLR 2024
+  - Feature: Establishes a unified feature space with initial agents via a novel multi-scale foreground-aware Pyramid Fusion network, which accommodates continually emerging new heterogeneous agent types into collaborative perception, while ensuring high perception performance and low integration cost.
+
+- **DI-V2X** (DI-V2X: Learning Domain-Invariant Representation for Vehicle-Infrastructure Collaborative 3D Object Detection) [[paper](https://arxiv.org/abs/2312.15742)] [[code](https://github.com/Serenos/DI-V2X)]
+  - Mode: Intermediate Collaboration
+  - Dataset: V2XSet, DAIR-V2X
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: AAAI 2024
+  - Feature: Bridge the data-level domain gap caused by sensor differences in the context of V2X collaborative perception, which is achieved by incorporating a domain-invariant distillation framework.
+
 - **HM-ViT** (HM-ViT: Hetero-Modal Vehicle-to-Vehicle Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2304.10628)] [[code](https://github.com/XHwind/HM-ViT)]
   - Mode: Intermediate Collaboration
   - Dataset: OPV2V
@@ -272,6 +296,21 @@ Multi-agents could have different types of sensors (Lidar/Camera) and communicat
 
 Several simulated/real-world and V2V/V2X collaborative perception datasets have been created recently.
 
+- **V2XFormer** (DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving) [[paper](https://arxiv.org/abs/2304.01168)] [[code](https://github.com/tianqi-wang1996/DeepAccident)]
+  - Mode: Intermediate Collaboration
+  - Dataset: **DeepAccident**
+  - Task: Detection, Forecasting
+  - Input: RGB Image
+  - Type: Simulated, V2X, Accident Scenarios
+
+- **FF-Tracking** (V2X-Seq: The Large-Scale Sequential Dataset for the Vehicle-Infrastructure Cooperative Perception and Forecasting) [[paper](https://arxiv.org/abs/2305.05938)] [[code](https://github.com/AIR-THU/DAIR-V2X-Seq)]
+  - Mode: Intermediate Collaboration
+  - Dataset: **DAIR-V2X-Seq**
+  - Task: Tracking
+  - Input: Point Cloud
+  - Publication: CVPR 2023
+  - Type: Real-world, V2X, Large-scale trajectory
+
 - **TCLF** (DAIR-V2X: A Large-Scale Dataset for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper](https://arxiv.org/abs/2204.05575)] [[code](https://github.com/AIR-THU/DAIR-V2X)]
   - Mode: Late Collaboration
   - Dataset: **DAIR-V2X**
@@ -301,6 +340,14 @@ Several simulated/real-world and V2V/V2X collaborative perception datasets have 
 ## Others
 
 Below are other interesting directions in collaborative perception.
+
+- **MACP** (MACP: Efficient Model Adaptation for Cooperative Perception) [[paper](https://arxiv.org/abs/2310.16870)] [[code](https://github.com/PurdueDigitalTwin/MACP)]
+  - Mode: Intermediate Collaboration
+  - Dataset: OPV2V, V2V4Real
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: WACV 2024
+  - Feature: A novel framework to empower adapting single-agent perception models to the cooperative perception, which is simple to implement and cost-effective to train.
 
 - **DUSA** (DUSA: Decoupled Unsupervised Sim2Real Adaptation for Vehicle-to-Everything Collaborative Perception) [[paper](https://arxiv.org/abs/2310.08117)] [[code](https://github.com/refkxh/DUSA)]
   - Mode: Intermediate Collaboration
