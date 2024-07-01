@@ -21,7 +21,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Detection
   - Input: Point Cloud
   - Publication: NeurIPS 2022
-  - Feature: A novel **communication-efficient** multi-agent collaborative perception framework with the guidance of **spatial confidence maps**.
+  - Feature: A novel _communication-efficient_ multi-agent collaborative perception framework with the guidance of **spatial confidence maps**.
 
 - **CRCNet** (Complementarity-Enhanced and Redundancy-Minimized Collaboration Network for Multi-agent Perception) [[paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548197)] [~~code~~]
   - Mode: Intermediate Collaboration
@@ -29,7 +29,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Detection
   - Input: Point Cloud
   - Publication: MM 2022
-  - Feature: Highlight two criteria for selecting features to **save communication bandwidth** including complementarity maximization and redundancy minimization.
+  - Feature: Highlight two criteria for selecting features to _save communication bandwidth_ including **complementarity maximization** and **redundancy minimization**.
 
 - **DiscoNet** (Learning Distilled Collaboration Graph for Multi-Agent Perception) [[paper&review](https://openreview.net/forum?id=ZRcjSOmYraB)] [[code](https://github.com/ai4ce/DiscoNet)]
   - Mode: Early Collaboration (teacher model), Intermediate Collaboration (student model)
@@ -45,7 +45,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Segmentation
   - Input: RGB Image
   - Publication: IROS 2021
-  - Feature: Extending the 1D handshaking mechanism of When2com to a 2D spatial handshaking mechanism.
+  - Feature: Extending the 1D handshaking mechanism of When2com to a **2D spatial handshaking mechanism**.
 
 - **When2com** (When2com: Multi-Agent Perception via Communication Graph Grouping) [[paper](https://arxiv.org/abs/2006.00176)] [[code](https://github.com/GT-RIPL/MultiAgentPerception)]
   - Mode: Intermediate Collaboration
@@ -53,7 +53,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Segmentation, Classification
   - Input: RGB Image
   - Publication: CVPR 2020
-  - Feature: A unified framework that learns both how to construct communication groups and when to communicate; A collaborative multi-agent semantic segmentation dataset, AirSim-MAP.
+  - Feature: A unified framework that learns both how to construct **communication groups** and _when to communicate_; A collaborative multi-agent semantic segmentation dataset, **AirSim-MAP**.
 
 - **Who2com** (Who2com: Collaborative Perception via Learnable Handshake Communication) [[paper](https://arxiv.org/abs/2003.09575)] [[code](https://github.com/GT-RIPL/MultiAgentPerception)]
   - Mode: Intermediate Collaboration
@@ -61,7 +61,7 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Segmentation
   - Input: RGB Image
   - Publication: ICRA 2020
-  - Feature: A multi-stage handshake communication mechanism where the neural network can learn to compress relevant information needed for each stage; Using a matching score to determine _who to connect with_.
+  - Feature: A **multi-stage handshake communication mechanism** where the neural network can learn to compress relevant information needed for each stage; Using a matching score to determine _who to connect with_.
 
     
 
@@ -75,7 +75,7 @@ Currently, several works have focused on improving collaborative perception perf
   - Task: Planning
   - Input: Point Cloud
   - Publication: CVPR 2022
-  - Feature: An end-to-end driving model with cooperative perception via V2V channels; A network-augmented autonomous driving simulation framework _AUTOCASTSIM_.
+  - Feature: An **end-to-end driving model** with cooperative perception via V2V channels; A network-augmented autonomous driving simulation framework **AUTOCASTSIM**.
 
 - **MP-Pose** (Multi-Robot Collaborative Perception with Graph Neural Networks) [[paper](https://arxiv.org/abs/2201.01760)] [~~code~~]
   - Mode: Intermediate Collaboration
@@ -83,7 +83,7 @@ Currently, several works have focused on improving collaborative perception perf
   - Task: Segmentation
   - Input: RGB Image
   - Publication: ICRA 2022
-  - Feature:  The first work employing GNN to solve a multi-view/multi-robot perception task with real robot image data.
+  - Feature:  The first work employing **GNN** to solve a multi-view/multi-robot perception task with real robot image data.
 
 ## Robustness
 
@@ -95,7 +95,7 @@ Due to the common localization noise in the real world, the collaborative percep
   - Task: Detection
   - Input: Point Cloud
   - Publication: ECCV 2022
-  - Feature: Formulate the communication latency challenge in collaborative perception for the first time and propose a novel latency-aware collaborative perception system; A novel latency compensation module, termed _SyncNet_, to
+  - Feature: Formulate the _communication latency challenge_ in collaborative perception for the first time and propose a novel latency-aware collaborative perception system; A novel latency compensation module, termed _SyncNet_, to
 achieve feature-level synchronization.
 
 - **IA-RCP** (Robust Collaborative Perception against Communication Interruption) [[paper](https://learn-to-race.org/workshop-ai4ad-ijcai2022/papers.html)] [~~code~~]
@@ -104,7 +104,7 @@ achieve feature-level synchronization.
   - Task: Detection
   - Input: Point Cloud
   - Publication: IJCAI 2022
-  - Feature: The first work to address the interruption issue in collaborative perception.
+  - Feature: The first work to address the _interruption issue_ in collaborative perception.
 
 - **Robust V2V** (Learning to Communicate and Correct Pose Errors) [[paper](https://arxiv.org/abs/2011.05289)] [[code](https://github.com/yifanlu0227/CoAlign)]
   - Mode: Intermediate Collaboration
@@ -112,7 +112,7 @@ achieve feature-level synchronization.
   - Task: Detection, Forecasting
   - Input: Point Cloud
   - Publication: CoRL 2020
-  - Feature: A _pose regression_ module predicts the relative pose noise between a pair of vehicles; A _consistency module_ based on Markov random field with Bayesian reweighting; An _attention module_ to filter out remaining noisy messages before aggregation. 
+  - Feature: A **pose regression** module predicts the relative _pose noise_ between a pair of vehicles; A **consistency module** based on Markov random field with Bayesian reweighting; An **attention module** to filter out remaining _noisy messages_ before aggregation. 
 
 ## Security
 
@@ -125,7 +125,7 @@ By studying adversarial robustness, we can enhance modern security protocols by 
   - Task: Adversarial Attack
   - Input: Point Cloud
   - Publication: ICCV 2021
-  - Feature: Investigate adversarial attacks in multi-agent perception where perturbations are applied to learned intermediate representations.
+  - Feature: Investigate _adversarial attacks_ in multi-agent perception where **perturbations** are applied to learned intermediate representations.
  
 ## Heterogeneity
 
@@ -137,7 +137,7 @@ Multi-agents could have different types of sensors (Lidar/Camera) and communicat
   - Task: Detection
   - Input: Point Cloud
   - Publication: ECCV 2022
-  - Feature:  The first unified transformer architecture for V2X perception, which can capture the heterogeneity nature of V2X systems with strong robustness against various noises.
+  - Feature:  The first unified transformer architecture for V2X perception, which can capture the _heterogeneity_ nature of V2X systems with strong robustness against various noises.
 
 - **STAR** (Multi-Robot Scene Completion: Towards Task-Agnostic Collaborative Perception) [[paper&review](https://openreview.net/forum?id=hW0tcXOJas2)] [[code](https://github.com/coperception/star)]
   - Mode: Intermediate Collaboration
@@ -145,7 +145,7 @@ Multi-agents could have different types of sensors (Lidar/Camera) and communicat
   - Task: Segmentation, Detection
   - Input: Point Cloud
   - Publication: CoRL 2022
-  - Feature: The first task-agnostic collaborative perception paradigm that learns a single collaboration module in a self-supervised manner for different downstream tasks.
+  - Feature: The first _task-agnostic_ collaborative perception paradigm that learns a single collaboration module in a self-supervised manner for different downstream tasks.
 
 ## Dataset
 
