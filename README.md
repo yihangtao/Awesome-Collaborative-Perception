@@ -13,6 +13,14 @@ Generally, the works are classified into the following types:
 Reducing the communication burden to save bandwidth resources and mitigate the perception delay is one of the most significant subtopics of collaborative perception.
 Recently, many papers have focused on optimizing communication loads of collaborative perception, which are listed in chronological order.
 
+- **DiscoNet** (Learning Distilled Collaboration Graph for Multi-Agent Perception) [[paper&review](https://openreview.net/forum?id=ZRcjSOmYraB)] [[code](https://github.com/ai4ce/DiscoNet)]
+  - Mode: Early Collaboration (teacher model), Intermediate Collaboration (student model)
+  - Dataset: V2X-Sim
+  - Task: Detection
+  - Input: Point Cloud
+  - Publication: NeurIPS 2021
+  - Feature: A teacher-student framework to train DiscoGraph via knowledge distillation; A matrix-valued edge weight in DiscoGraph.
+
 - **MASH** (Overcoming Obstructions via Bandwidth-Limited Multi-Agent Spatial Handshaking) [[paper](https://arxiv.org/abs/2107.00771)] [[code](https://github.com/yifanlu0227/CoAlign)]
   - Mode: Late Collaboration
   - Dataset: AirSim
@@ -35,11 +43,21 @@ Recently, many papers have focused on optimizing communication loads of collabor
   - Task: Segmentation
   - Input: RGB Image
   - Publication: ICRA 2020
-  - Feature: A multi-stage handshake communication mechanism where the neural network can learn to compress relevant information needed for each stage; Using matching score to determine _who to connect with_.
+  - Feature: A multi-stage handshake communication mechanism where the neural network can learn to compress relevant information needed for each stage; Using a matching score to determine _who to connect with_.
 
     
 
 ## Model Enhancement
+
+Currently, several works have focused on improving collaborative perception performance by leveraging advanced models or refining the existing model structures. Here are some examples.
+
+- **MP-Pose** (Multi-Robot Collaborative Perception with Graph Neural Networks) [[paper](https://arxiv.org/abs/2201.01760)] [~~code~~]
+  - Mode: Intermediate Collaboration
+  - Dataset: AirSim-MAP
+  - Task: Segmentation
+  - Input: RGB Image
+  - Publication: ICRA 2022
+  - Feature:  The first work employing GNN to solve a multi-view/multi-robot perception task with real robot image data.
 
 ## Robustness
 
